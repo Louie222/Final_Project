@@ -6,7 +6,8 @@ import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
 
 const Login = () => {
 
-  const btnstyle={margin:'8px 0'}   
+  const btnstyle={margin:'8px 0'} 
+  const avatarStyle={backgroundColor:'orange'}  
   const paperStyle = {
     padding: 20,
     height: "70vh",
@@ -16,9 +17,9 @@ const Login = () => {
   return (
     <Grid>
       <Paper elevation={10} style={paperStyle}>
-          <Avatar><LockTwoToneIcon/></Avatar>
-        <Grid align="center">
-          <h2>Sign in</h2>
+          <Grid align="center">
+            <Avatar style={avatarStyle}><LockTwoToneIcon/></Avatar>
+            <h2>Sign in</h2>
         </Grid>
         <TextField
           label="Username"

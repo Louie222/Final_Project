@@ -1,9 +1,12 @@
 import React from "react";
-import { Grid, Paper, TextField } from "@material-ui/core";
+import { Grid, Paper, Avatar, TextField, Button, Typography, Link, } from "@material-ui/core";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
 
 const Login = () => {
+
+  const btnstyle={margin:'8px 0'}   
   const paperStyle = {
     padding: 20,
     height: "70vh",
@@ -13,6 +16,7 @@ const Login = () => {
   return (
     <Grid>
       <Paper elevation={10} style={paperStyle}>
+          <Avatar><LockTwoToneIcon/></Avatar>
         <Grid align="center">
           <h2>Sign in</h2>
         </Grid>
@@ -31,8 +35,17 @@ const Login = () => {
         />
         <FormControlLabel
           control={<Checkbox name="checkedB" color="primary" />}
-          label="Primary"
+          label="Remember me"
     />
+            <Button type='submit' color='primary' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
+            <Typography> <Link href="#" >
+            Forgot password?
+        </Link>
+        </Typography>
+        <Typography> Do you have an account? <Link href="#" >
+            Sign Up
+        </Link>
+        </Typography>
       </Paper>
     </Grid>
   );

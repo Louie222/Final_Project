@@ -4,6 +4,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
 
+
 const Login = () => {
 
   const btnstyle={margin:'8px 0'} 
@@ -11,7 +12,7 @@ const Login = () => {
   const paperStyle = {
     padding: 20,
     height: "70vh",
-    width: 280,
+    width: 300,
     margin: "20px auto",
   };
   return (
@@ -47,9 +48,11 @@ const Login = () => {
             Sign Up
         </Link>
         </Typography>
-      </Paper>
+        </Paper>
     </Grid>
   );
 };
+
+
 
 export default Login;

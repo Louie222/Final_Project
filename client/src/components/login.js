@@ -5,19 +5,14 @@ import Checkbox from "@material-ui/core/Checkbox";
 import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
 
 
-const Login = () => {
+const Login = ({handleChange}) => {
 
   const btnstyle={margin:'8px 0'} 
   const avatarStyle={backgroundColor:'orange'}  
-  const paperStyle = {
-    padding: 20,
-    height: "70vh",
-    width: 300,
-    margin: "0 auto",
-  };
+  const paperStyle={padding :20,height:'73vh',width:300, margin:"0 auto"}
   return (
     <Grid>
-      <Paper elevation={10} style={paperStyle}>
+      <Paper style={paperStyle}>
           <Grid align="center">
             <Avatar style={avatarStyle}><LockTwoToneIcon/></Avatar>
             <h2>Sign in</h2>
@@ -44,8 +39,9 @@ const Login = () => {
             Forgot password?
         </Link>
         </Typography>
-        <Typography> Do you have an account? <Link href="#" >
-            Sign Up
+        <Typography> Do you have an account? 
+            <Link href="#" onclick={()=>handleChange("event",1)}>
+                Sign Up
         </Link>
         </Typography>
         </Paper>

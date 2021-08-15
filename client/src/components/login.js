@@ -42,7 +42,7 @@ const Login = ({handleChange}) => {
         <Typography> Do you have an account? 
             <Link href="#" onclick={()=>handleChange("event",1)}>
                 Sign Up
-        </Link>
+            </Link>
         </Typography>
         </Paper>
     </Grid>

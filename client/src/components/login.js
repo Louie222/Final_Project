@@ -13,7 +13,7 @@ const Login = () => {
     padding: 20,
     height: "70vh",
     width: 300,
-    margin: "20px auto",
+    margin: "0 auto",
   };
   return (
     <Grid>

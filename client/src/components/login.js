@@ -3,9 +3,13 @@ import { Grid, Paper, Avatar, TextField, Button, Typography, Link, } from "@mate
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import LockTwoToneIcon from '@material-ui/icons/LockTwoTone';
+import { useHistory } from 'react-router-dom';
+
 
 
 const Login = ({handleChange}) => {
+
+    let history = useHistory();
 
   const btnstyle={margin:'8px 0'} 
   const avatarStyle={backgroundColor:'orange'}  
@@ -34,7 +38,7 @@ const Login = ({handleChange}) => {
           control={<Checkbox name="checkedB" color="primary" />}
           label="Remember me"
     />
-            <Button type='submit' color='primary' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
+            <Button onClick={() => {history.push('/homepage')}} type='submit' color='primary' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
             <Typography> <Link href="#" >
             Forgot password?
         </Link>

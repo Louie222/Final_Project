@@ -38,7 +38,7 @@ const Login = ({handleChange}) => {
           control={<Checkbox name="checkedB" color="primary" />}
           label="Remember me"
     />
-            <Button type='submit' color='primary' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
+            <Button onClick={() => {alert('You have successfully logged in')}} type='submit' color='primary' variant='contained' style={btnstyle} fullWidth>Sign In</Button>
             <Typography> 
               <Link href="#">
             Forgot password?

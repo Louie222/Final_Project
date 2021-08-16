@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Login from '../Components/login';
 import SignUp from '../Components/signup';
+import homePage from '../Components/homepage';
 
 const SignInOutContainer = () => {
     const [value, setValue]=useState(0)
@@ -45,12 +46,17 @@ const SignInOutContainer = () => {
         <Tab label="Sign In" />
     
         <Tab label="Sign Up" />
+
+        <Tab label="Homepage" />
       </Tabs>
       <TabPanel value={value} index={0}>
       <Login handleChange={handleChange}/>
     </TabPanel>
     <TabPanel value={value} index={1}>
       <SignUp/>
+    </TabPanel>
+    <TabPanel value={value} index={2}>
+
     </TabPanel>
     </Paper>
         )
